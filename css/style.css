@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .parallax__container {
+    position: relative;
+    display: block;
+    height: 980px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .parallax__image {
+    position: fixed;
+    height: 1000px;
+    width: 100%;
+    top: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  .last {
+    position: absolute;
+    bottom: 0;
+    z-index: 300;
+    -o-object-position: bottom center;
+       object-position: bottom center;
+  }
+  .parallax__noscript--image {
+    position: absolute;
+    background-image: url("http://www.firewatchgame.com/images/keyart-mobile.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    z-index: 310;
+  }
+
+  .parallax__image, .last {
+    display: none;
+  }
+  
+  .content {
+    height: 100%;
+    width: 100%;
+    background-color: #210002;
+    position: relative;
+    z-index: 200;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    padding: 5rem 12rem;
+    overflow: hidden;
+  }
+  .content iframe {
+    margin: 1rem 0;
+  }
+  
+  .vids {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    color: #ffaf00;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 1px;
+  }
+  
